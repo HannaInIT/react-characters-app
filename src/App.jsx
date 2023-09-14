@@ -32,7 +32,7 @@ function App() {
         <section key={index} className='card' >
           <h3>{characterObj.name}</h3>
           <p>{characterObj.occupation}</p>
-          <a href={"/characters/" + characterObj.id}>More Details</a>
+          <Link to={"/characters/" + characterObj.id}>More Details</Link>
         </section>
       )
     })
